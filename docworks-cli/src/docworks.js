@@ -15,24 +15,20 @@ function docworks() {
     process.exit(1)
   }
 
-  let command = process.argv[2]
+  const command = process.argv[2]
+  const cliArgs = process.argv.slice(3)
 
   if (command === 'ecp') {
-    ecp()
-  }
-  else if (command === 'validate' || command === 'val') {
-    validateCommand()
-  }
-  else if (command === 'tern') {
-    tern()
-  }
-  else if (command === 'dts') {
-    dts()
-  }
-  else if (command === 'local') {
-    ldw()
-  }
-  else {
+    return ecp()
+  } else if (command === 'validate' || command === 'val') {
+    return validateCommand()
+  } else if (command === 'tern') {
+    return tern()
+  } else if (command === 'dts') {
+    return dts()
+  } else if (command === 'local') {
+    return ldw()
+  } else {
     printUsage(1)
     process.exit(1)
   }
@@ -52,49 +48,52 @@ function docworks() {
   /* eslint-enable no-console */
 
   function ecp() {
-    let argv = optimist
-      .usage('Usage: $0 ecp -r [remote repo] [-b [remote branch]] -s [local sources] -p [file pattern] [-ed [enrichment docs directory]] [--plug [plugin]] [--dryrun]')
-      .demand('r')
+    const commandConfig = optimist
+      .usage('Usage: $0 ecp -r [remote repo] [-b [remote branch]] -fs [local sources] -fp [file pattern] [-ed [enrichment docs directory]] [--plug [plugin]] [--dryrun]')
       .alias('r', 'remote')
       .describe('r', 'remote repository to merge docs into')
       .alias('b', 'branch')
       .describe('b', 'branch on the remote repository to work with')
-      .demand('fs')
       .alias('fs', 'sources')
       .describe('fs', 'one or more folders containing the source files to extract docs from')
       .alias('fx', 'excludes')
       .describe('fx', 'one or more folders to exclude (including their children) from extracting docs')
-      .default('fp', '.+\\.js?$')
       .alias('fp', 'pattern')
       .describe('fp', 'file pattern, defaults to ".+\\.js$"')
-      .demand('p')
       .alias('p', 'project')
       .describe('p', 'project folder name in the docs repo')
       .describe('ed', 'project enrichment docs relative directory')
       .describe('plug', 'a module name that is a jsdoc or docworks plugin')
       .describe('dryrun', 'dry run - do not push to remote repo')
-      .parse(process.argv.slice(3))
+      .describe('config', 'js/json file to load configurations from')
 
-    let remote = argv.remote
-    let branch = argv.branch
-    let sources = argv.sources
-    let excludes = argv.excludes ? (Array.isArray(argv.excludes) ? argv.excludes : [argv.excludes]) : []
-    let pattern = argv.pattern
-    let project = argv.project
-    let dryrun = !!argv.dryrun
-    let enrichmentDocsDir = argv.ed
-    let plugins = resolveAndInitPlugins(argv.plug)
+    const argv = commandConfig.parse(cliArgs)
 
-    tmp.dir().then(o => {
+    const config = argv.config
+      ? Object.assign(require(argv.config), argv)
+      : argv
+
+    if (!config.remote || !config.sources || !config.project) {
+      commandConfig.showHelp()
+      process.exit(1)
+    }
+
+    return tmp
+      .dir()
+      .then(({ path: tmpWorkingDir }) => {
       return extractComparePush({
-        remoteRepo: remote,
-        remoteBranch: branch,
-        workingDir: o.path,
-        projectSubdir: project,
-        jsDocSources: {'include': sources, 'includePattern': pattern, 'exclude': excludes},
-        plugins,
-        enrichmentDocsDir,
-        dryrun
+          remoteRepo: config.remote,
+          remoteBranch: config.branch,
+          workingDir: tmpWorkingDir,
+          projectSubdir: config.project,
+          jsDocSources: {
+            include: config.sources,
+            includePattern: config.pattern || '.+\\.js?$',
+            exclude: [].concat(config.excludes),
+          },
+          plugins: resolveAndInitPlugins(config.plug),
+          enrichmentDocsDir: config.ed,
+          dryrun: !!config.dryrun,
       })
     })
       .catch(() => {
@@ -103,24 +102,36 @@ function docworks() {
   }
 
   function validateCommand() {
-    let argv = optimist
+    let commandConfig = optimist
       .usage('Usage: $0 validate -fs [local sources] -p [file pattern] -fp [file pattern]')
-      .demand('fs')
       .alias('fs', 'sources')
       .describe('fs', 'folder containing the source files to extract docs from')
-      .default('fp', '.+\\.js?$')
+      .alias('fx', 'excludes')
+      .describe('fx', 'one or more folders to exclude (including their children) from extracting docs')
       .alias('fp', 'pattern')
       .describe('fp', 'file pattern, defaults to ".+\\.js$"')
-      .alias('plug', 'jsdocplugin')
       .describe('plug', 'a module name that is a jsdoc plugin')
-      .parse(process.argv.slice(3))
+      .describe('config', 'js/json file to load configurations from')
 
-    let sources = argv.sources
-    let pattern = argv.pattern
-    let plugins = resolveAndInitPlugins(argv.jsdocplugin)
+    const argv = commandConfig.parse(cliArgs)
 
-    if (!validate({'include': sources, 'includePattern': pattern}, plugins))
+    const config = argv.config
+      ? Object.assign(require(argv.config), argv)
+      : argv
+
+    if (!config.sources) {
+      commandConfig.showHelp()
       process.exit(1)
+  }
+
+    const jsDocSources = {
+      include: config.sources,
+      includePattern: config.pattern || '.+\\.js?$',
+      exclude: [].concat(config.excludes),
+    }
+    const plugins = resolveAndInitPlugins(config.plug)
+
+    if (!validate(jsDocSources, plugins)) process.exit(1)
   }
 
   function tern() {
@@ -211,54 +222,54 @@ function docworks() {
   }
 
   function ldw() {
-    let argv = optimist
+    let commandConfig = optimist
       .usage('Usage: $0 local -r [remote repo] -d [local directory] -fs [local sources] -fp [file pattern] -p [project name] [-ed [enrichment docs directory]] [--plug [plugin]]')
-      .demand('r')
       .alias('r', 'remote')
       .describe('r', 'remote repository to merge docs into')
       .alias('b', 'branch')
       .describe('b', 'branch on the remote repository to work with')
-      .demand('d')
       .alias('d', 'dist')
       .describe('d', 'local directory to output docs into')
-      .demand('fs')
       .alias('fs', 'sources')
       .describe('fs', 'one or more folders containing the source files to extract docs from')
       .alias('fx', 'excludes')
       .describe('fx', 'one or more folders to exclude (including their children) from extracting docs')
-      .default('fp', '.+\\.js?$')
       .alias('fp', 'pattern')
       .describe('fp', 'file pattern, defaults to ".+\\.js$"')
-      .demand('p')
       .alias('p', 'project')
       .describe('p', 'project folder name in the docs repo')
       .describe('ed', 'project enrichment docs relative directory')
       .describe('plug', 'a module name that is a jsdoc or docworks plugin')
-      .parse(process.argv.slice(3))
+      .describe('config', 'js/json file to load configurations from')
 
-    const remote = argv.remote
-    const branch = argv.branch
-    const dist = argv.dist
-    const sources = argv.sources
-    const excludes = argv.excludes ? (Array.isArray(argv.excludes) ? argv.excludes : [argv.excludes]) : []
-    const pattern = argv.pattern
-    const project = argv.project
-    const dryrun = !!argv.dryrun
-    const enrichmentDocsDir = argv.ed
-    const plugins = resolveAndInitPlugins(argv.plug)
+    const argv = commandConfig.parse(cliArgs)
 
-    tmp.dir()
-      .then(wd => {
+    const config = argv.config
+      ? Object.assign(require(argv.config), argv)
+      : argv
+
+    if (!config.remote || !config.dist || !config.sources || !config.project) {
+      commandConfig.showHelp()
+      process.exit(1)
+    }
+
+    return tmp
+      .dir()
+      .then(({ path: tmpWorkingDir }) => {
         return localDocworks({
-          remoteRepo: remote,
-          branch,
-          outputDirectory: dist,
-          tmpDir: wd.path,
-          projectDir: project,
-          jsDocSources: {'include': sources, 'includePattern': pattern, 'exclude': excludes},
-          plugins,
-          enrichmentDocsDir,
-          dryrun
+          remoteRepo: config.remote,
+          branch: config.branch,
+          outputDirectory: config.dist,
+          tmpDir: tmpWorkingDir,
+          projectDir: config.project,
+          jsDocSources: {
+            include: config.sources,
+            includePattern: config.pattern || '.+\\.js?$',
+            exclude: [].concat(config.excludes),
+          },
+          plugins: resolveAndInitPlugins(config.plug),
+          enrichmentDocsDir: config.ed,
+          dryrun: !!config.dryrun,
         })
       })
       .catch(() => {

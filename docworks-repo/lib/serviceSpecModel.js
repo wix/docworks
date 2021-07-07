@@ -23,7 +23,7 @@ const docSpec = createOrderedPropertiesPosObj(['summary', 'description', 'links'
     })
 })
 
-const locationSpec = createOrderedPropertiesPosObj(['fileName', 'lineno'])
+const locationSpec = createOrderedPropertiesPosObj(['fileName'])
 
 const propertySpec = createOrderedPropertiesPosObj(['name', 'labels', 'get', 'set', 'type',
     'defaultValue', 'locations', 'docs', 'srcDocs', 'extra'], {

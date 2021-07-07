@@ -5,8 +5,7 @@
       "$w.HiddenCollapsedMixin" ],
   "labels": [],
   "location":
-    { "filename": "cartWidget.js",
-      "lineno": 3 },
+    { "filename": "cartWidget.js" },
   "docs":
     { "summary": "An icon that leads users to the shopping cart.",
       "description":
@@ -37,8 +36,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the products have been added to the cart." },
         "locations":
-          [ { "filename": "cartWidget.js",
-              "lineno": 52 } ],
+          [ { "filename": "cartWidget.js" } ],
         "docs":
           { "summary": "Adds multiple products to the shopping cart.",
             "description":
@@ -124,8 +122,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the product has been added to the cart." },
         "locations":
-          [ { "filename": "cartWidget.js",
-              "lineno": 90 } ],
+          [ { "filename": "cartWidget.js" } ],
         "docs":
           { "summary": "Adds a product to the shopping cart.",
             "description":
@@ -219,8 +216,7 @@
   "messages":
     [ { "name": "AddToCartCustomTextField",
         "locations":
-          [ { "filename": "cartWidget.js",
-              "lineno": 41 } ],
+          [ { "filename": "cartWidget.js" } ],
         "docs":
           { "summary": "An object used to pass a custom text field when adding a product to\n the shopping cart with options.",
             "links":
@@ -296,8 +292,7 @@
         "labels": [] },
       { "name": "AddToCartItem",
         "locations":
-          [ { "filename": "cartWidget.js",
-              "lineno": 18 } ],
+          [ { "filename": "cartWidget.js" } ],
         "docs":
           { "summary": "An object used when adding multiple products to the shopping cart.",
             "links":
@@ -350,8 +345,7 @@
         "labels": [] },
       { "name": "AddToCartOptions",
         "locations":
-          [ { "filename": "cartWidget.js",
-              "lineno": 29 } ],
+          [ { "filename": "cartWidget.js" } ],
         "docs":
           { "summary": "An object used when adding a product to the shopping cart with options.",
             "links":

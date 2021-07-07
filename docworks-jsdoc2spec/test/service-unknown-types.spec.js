@@ -41,11 +41,11 @@ describe('docs', function() {
                 errors: [
                     {
                         message: 'Operation unknownType has an unknown param type Unknown1',
-                        location: 'service-unknown-types.js (11)'
+                        location: 'service-unknown-types.js'
                     },
                     {
                         message: 'Operation unknownType has an unknown return type Unknown2',
-                        location: 'service-unknown-types.js (11)'
+                        location: 'service-unknown-types.js'
                     }
 
                 ]
@@ -70,7 +70,7 @@ describe('docs', function() {
                 errors: [
                     {
                         message: 'Message Type1 has an unknown property type Unknown1',
-                        location: 'service-unknown-types.js (21)'
+                        location: 'service-unknown-types.js'
                     }
 
                 ]
@@ -122,7 +122,7 @@ describe('docs', function() {
                 errors: [
                     {
                         message: 'Property unknownProperty has an unknown type Unknown1',
-                        location: 'service-unknown-types.js (49)'
+                        location: 'service-unknown-types.js'
                     }
                 ]
             })

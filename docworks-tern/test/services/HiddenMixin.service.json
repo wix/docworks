@@ -4,8 +4,7 @@
   "labels":
   [ "new" ],
   "location":
-  { "filename": "HiddenMixin.es6",
-    "lineno": 6 },
+  { "filename": "HiddenMixin.es6" },
   "docs":
   { "summary": "Provides functionality for elements that can be hidden.\n\n To learn about the behavior of a hidden element,\n see the [`hidden`](#hidden) property.",
     "links": [],
@@ -17,8 +16,7 @@
     "set": false,
     "type": "boolean",
     "locations":
-    [ { "filename": "HiddenMixin.es6",
-      "lineno": 83 } ],
+    [ { "filename": "HiddenMixin.es6" } ],
     "docs":
     { "summary": "Indicates if the element is visible or hidden.",
       "description":
@@ -75,8 +73,7 @@
       "set": false,
       "type": "boolean",
       "locations":
-      [ { "filename": "HiddenMixin.es6",
-        "lineno": 211 } ],
+      [ { "filename": "HiddenMixin.es6" } ],
       "docs":
       { "summary": "Indicates if the element is actually visible.",
         "description":
@@ -114,8 +111,7 @@
       [ "void" ] },
       "doc": "undefined. on fulfilled - When the animation is complete and the element's `hidden` property has been set to `true`." },
     "locations":
-    [ { "filename": "HiddenMixin.es6",
-      "lineno": 16 } ],
+    [ { "filename": "HiddenMixin.es6" } ],
     "docs":
     { "summary": "Hides the element and sets its `hidden` property\n to `true`, using an animation if specified.",
       "description":
@@ -187,8 +183,7 @@
         [ "void" ] },
         "doc": "undefined. on fulfilled - When the animation is complete and the element's `hidden` property has been set to `false`." },
       "locations":
-      [ { "filename": "HiddenMixin.es6",
-        "lineno": 144 } ],
+      [ { "filename": "HiddenMixin.es6" } ],
       "docs":
       { "summary": "Shows the element and sets its `hidden` property\n to `false`, using an animation if specified.",
         "description":

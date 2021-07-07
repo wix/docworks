@@ -32,7 +32,7 @@ describe('docs', function() {
         services: [
           {
             name: 'ServiceClassDesc',
-            location: {filename: 'service-classdesc.js', lineno: 3},
+            location: {filename: 'service-classdesc.js'},
             docs: {
               summary: 'this is a docs test service',
               description: 'this class is used to test how service docs work'

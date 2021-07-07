@@ -13,8 +13,7 @@ describe('wix-custom-labels', function() {
   function makeDoclet() {
     return {
       meta: {
-        filename: 'source-file.js',
-        lineno: '8'
+        filename: 'source-file.js'
       }
     }
   }

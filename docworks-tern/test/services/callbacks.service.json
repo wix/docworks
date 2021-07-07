@@ -2,8 +2,7 @@
   "mixes": [],
   "labels": [],
   "location":
-    { "filename": "functions.es6",
-      "lineno": 9 },
+    { "filename": "functions.es6" },
   "docs": { "summary": "", "description": [], "links": [], "examples": [] },
   "properties": [],
   "operations":
@@ -18,8 +17,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "filename": "ViewportMixin.es6",
-              "lineno": 12 } ],
+          [ { "filename": "ViewportMixin.es6" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an element is scrolled\n into the viewable part of the current window.",
             "description": [], "links": [], "examples": [] } },
@@ -34,8 +32,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "filename": "ViewportMixin.es6",
-              "lineno": 12 } ],
+          [ { "filename": "ViewportMixin.es6" } ],
         "docs":
           { "summary": "Adds an event handler that runs when an element is scrolled\n into the viewable part of the current window.",
             "description": [],
@@ -51,8 +48,7 @@
         "ret":
         { "type": "void" },
         "locations":
-        [ { "filename": "datasetApi.js",
-          "lineno": 283 } ],
+        [ { "filename": "datasetApi.js" } ],
         "docs":
         { "summary": "Adds an event handler that runs just after a save.",
           "description": [],
@@ -72,8 +68,7 @@
           { "type": "void",
             "doc": "" },
         "locations":
-          [ { "filename": "xxx.es6",
-              "lineno": 12 } ],
+          [ { "filename": "xxx.es6" } ],
       "docs": { "summary": "", "description": [], "links": [], "examples": [] } },
       { "name": "EventHandler2",
         "labels": [],
@@ -89,8 +84,7 @@
           { "type": "number",
             "doc": "" },
         "locations":
-          [ { "filename": "xxx.es6",
-              "lineno": 12 } ],
+          [ { "filename": "xxx.es6" } ],
         "docs": { "summary": "", "description": [], "links": [], "examples": [] } },
       { "name": "AfterSaveHandler",
         "labels": [],
@@ -105,8 +99,7 @@
         "ret":
         { "type": "void" },
         "locations":
-        [ { "filename": "datasetApi.js",
-          "lineno": 274 } ],
+        [ { "filename": "datasetApi.js" } ],
         "docs":
         { "summary": "An after save event handler.",
           "links": [],

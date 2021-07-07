@@ -12,8 +12,7 @@ describe('wix-one-of', () => {
 
   const makeDoclet = () => ({
       meta: {
-        filename: 'source-file.js',
-        lineno: '8'
+        filename: 'source-file.js'
       }
     }
   )
@@ -58,7 +57,7 @@ describe('wix-one-of', () => {
       optional: undefined
     }
   ],
-    locations: [ { filename: 'Service.withMultipleTags.service.js', lineno: 9 } ],
+    locations: [ { filename: 'Service.withMultipleTags.service.js' } ],
     docs: {
     summary: undefined,
       description: undefined,

@@ -2,8 +2,7 @@
   "mixes": [],
   "labels": [],
   "location":
-    { "filename": "properties.es6",
-      "lineno": 9 },
+    { "filename": "properties.es6" },
   "docs":
     { "summary": "",
       "description": [],
@@ -16,8 +15,7 @@
       "set": false,
       "type": "string",
       "locations":
-        [ { "filename": "location.es6",
-            "lineno": 247 } ],
+        [ { "filename": "location.es6" } ],
       "docs":
         { "summary": "Summary of prop 1",
           "description": [],
@@ -29,8 +27,7 @@
       "set": true,
       "type": "string",
       "locations":
-        [ { "filename": "location.es6",
-            "lineno": 247 } ],
+        [ { "filename": "location.es6" } ],
       "docs":
         { "summary": "Summary of prop 2",
           "description": [],
@@ -45,8 +42,7 @@
           "typeParams":
           [ "string" ] },
       "locations":
-        [ { "filename": "location.es6",
-            "lineno": 247 } ],
+        [ { "filename": "location.es6" } ],
       "docs":
         { "summary": "Summary of arrayProp",
           "description": [],

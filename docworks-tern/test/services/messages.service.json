@@ -9,8 +9,7 @@
   "labels":
   [ "new" ],
   "location":
-  { "filename": "DropDown.es6",
-    "lineno": 17 },
+  { "filename": "DropDown.es6" },
   "docs":
   { "summary": "Dropdowns are used for selecting one of a number of options.\n They are especially useful when there are too many options to display using\n [radio buttons]($w.RadioButtonGroup.html). Dropdowns consist of a list\n of [options](#Option). Each [option](#Option) contains a label, which is\n what the user sees, and a value, which is what is used in code and stored in\n you collections.",
     "links": [],
@@ -21,8 +20,7 @@
   "messages":
   [ { "name": "Option",
       "locations":
-    [ { "filename": "DropDown.es6",
-        "lineno": 44 } ],
+    [ { "filename": "DropDown.es6" } ],
     "docs":
       { "summary": "An object used by the `options` property that contains the attributes of a dropdown list item.",
         "links":

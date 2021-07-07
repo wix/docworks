@@ -54,7 +54,7 @@ describe('docs', function() {
         errors: [
           {
             message: 'Property writeOnly is a write only property',
-            location: 'service-properties.js (18)'
+            location: 'service-properties.js'
           }
         ]
       })
@@ -89,7 +89,7 @@ describe('docs', function() {
         errors: [
           {
             message: 'Property missingType is missing a type annotation',
-            location: 'service-properties.js (44)'
+            location: 'service-properties.js'
           }
         ]
       })
@@ -109,7 +109,7 @@ describe('docs', function() {
         errors: [
           {
             message: 'Property missMatchType has mismatching types for get (string) and set (number)',
-            location: 'service-properties.js (52, 61)'
+            location: 'service-properties.js'
           }
         ]
       })
@@ -129,7 +129,7 @@ describe('docs', function() {
         errors: [
           {
             message: 'Property dumplicate is defined two or more times',
-            location: 'service-properties.js (69, 78)'
+            location: 'service-properties.js'
           }
         ]
       })
@@ -149,7 +149,7 @@ describe('docs', function() {
         errors: [
           {
             message: 'Property dumplicate2 is defined two or more times',
-            location: 'service-properties.js (87, 96, 105)'
+            location: 'service-properties.js'
           }
         ]
       })

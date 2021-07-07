@@ -66,7 +66,7 @@ describe('docs', function() {
                     {
                         name: 'ServiceOperations',
                         operations: [
-                            {name: 'oneParam', locations: [{filename: 'service-operations.js', lineno: 11}]}
+                            {name: 'oneParam', locations: [{filename: 'service-operations.js'}]}
                         ]
                     }
                 ]
@@ -160,7 +160,7 @@ describe('docs', function() {
                 errors: [
                     {
                         message: 'Operation multipleReturns has multiple returns annotations',
-                        location: 'service-operations.js (51)'
+                        location: 'service-operations.js'
                     }
                 ]
             })
@@ -180,7 +180,7 @@ describe('docs', function() {
                 errors: [
                     {
                         message: 'Operation duplicate is defined two or more times',
-                        location: 'service-operations.js (91, 104)'
+                        location: 'service-operations.js'
                     }
                 ]
             })
@@ -200,7 +200,7 @@ describe('docs', function() {
                 errors: [
                     {
                         message: 'Operation brokenReturns1 has return description but no type. Did you forget the {} around the type?',
-                        location: 'service-operations.js (141)'
+                        location: 'service-operations.js'
                     }
                 ]
             })
@@ -220,7 +220,7 @@ describe('docs', function() {
                 errors: [
                     {
                         message: 'Operation brokenReturns2 has return without description or type',
-                        location: 'service-operations.js (154)'
+                        location: 'service-operations.js'
                     }
                 ]
             })
@@ -240,7 +240,7 @@ describe('docs', function() {
                 errors: [
                     {
                         message: 'Operation brokenParam param param has a name but no type. Did you forget the {} around the type?',
-                        location: 'service-operations.js (167)'
+                        location: 'service-operations.js'
                     }
                 ]
             })

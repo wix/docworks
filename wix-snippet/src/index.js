@@ -39,7 +39,7 @@ exports.defineTags = function(dictionary) {
         doclet.examples.push(`<caption>${snippet.defaultvalue}</caption>${description}\n${contents}`)
       } catch(error) {
         if (error.code === 'ENOENT')
-          logger.error('ERROR: The @snippet tag - file \'' + p + '\' not found. File: ' + doclet.meta.filename + ' line: ' + doclet.meta.lineno)
+          logger.error('ERROR: The @snippet tag - file \'' + p + '\' not found. File: ' + doclet.meta.filename)
         else
           logger.error(error)
       }

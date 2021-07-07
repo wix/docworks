@@ -3,7 +3,6 @@
   "mixes": [],
   "labels": [],
   "location": {
-    "lineno": 2,
     "filename": "service.js"
   },
   "docs": {
@@ -31,7 +30,6 @@
       },
       "locations": [
         {
-          "lineno": 14,
           "filename": "service.js"
         }
       ],

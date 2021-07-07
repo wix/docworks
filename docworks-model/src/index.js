@@ -117,10 +117,9 @@ function GeneticType(name, typeParams) {
   }
 }
 
-function Location(filename, lineno) {
+function Location(filename) {
   return {
-    filename: filename,
-    lineno: lineno
+    filename: filename
   }
 }
 
@@ -136,8 +135,7 @@ function JsDocError(message, locations) {
   let files = locations.reduce(groupByFile, {})
   let fileLocations = Object.keys(files)
     .map((group) => {
-      let linenos = files[group].map(location => location.lineno)
-      return `${group} (${linenos.join(', ')})`
+      return `${group}`
     })
     .join(', ')
   return {

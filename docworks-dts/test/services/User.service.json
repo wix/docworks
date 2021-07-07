@@ -4,8 +4,7 @@
   "labels":
     [ "changed" ],
   "location":
-    { "filename": "users.js",
-      "lineno": 72 },
+    { "filename": "users.js" },
   "docs":
     { "summary": "A site user.",
       "links": [],
@@ -19,8 +18,7 @@
         "set": false,
         "type": "string",
         "locations":
-          [ { "filename": "users.js",
-              "lineno": 77 } ],
+          [ { "filename": "users.js" } ],
         "docs":
           { "summary": "Gets the user's ID.",
             "description":
@@ -75,8 +73,7 @@
         "set": false,
         "type": "boolean",
         "locations":
-          [ { "filename": "users.js",
-              "lineno": 98 } ],
+          [ { "filename": "users.js" } ],
         "docs":
           { "summary": "Indicates whether the user is logged in or not.",
             "description":
@@ -135,8 +132,7 @@
         "set": false,
         "type": "string",
         "locations":
-          [ { "filename": "users.js",
-              "lineno": 124 } ],
+          [ { "filename": "users.js" } ],
         "docs":
           { "summary": "Deprecated: Gets the user's role.",
             "description":
@@ -203,8 +199,7 @@
                   [ "string" ] },
             "doc": "Fulfilled - The email address of the user that is logged in.\nRejected - Message containing error that the current user is not logged in." },
         "locations":
-          [ { "filename": "users.js",
-              "lineno": 152 } ],
+          [ { "filename": "users.js" } ],
         "docs":
           { "summary": "Gets the email of the current user.",
             "description":
@@ -270,8 +265,7 @@
                         [ "wix-users.User.PricingPlan" ] } ] },
             "doc": "Fulfilled - The user's pricing plans.\nRejected - Error message." },
         "locations":
-          [ { "filename": "users.js",
-              "lineno": 275 } ],
+          [ { "filename": "users.js" } ],
         "docs":
           { "summary": "Gets the user's member pricing plan.",
             "description":
@@ -352,8 +346,7 @@
                         [ "wix-users.User.UserRole" ] } ] },
             "doc": "Fulfilled - The user's roles.\nRejected - Error message." },
         "locations":
-          [ { "filename": "users.js",
-              "lineno": 220 } ],
+          [ { "filename": "users.js" } ],
         "docs":
           { "summary": "Gets the user's member roles.",
             "description":
@@ -460,8 +453,7 @@
   "messages":
     [ { "name": "PricingPlan",
         "locations":
-          [ { "filename": "users.js",
-              "lineno": 265 } ],
+          [ { "filename": "users.js" } ],
         "docs":
           { "summary": "An object returned by the `getPricingPlans()` function representing a user's <a href=\"https://support.wix.com/en/article/adding-and-setting-up-the-paid-plans-app\" target=\"_blank\">pricing plans</a>.",
             "links":
@@ -505,8 +497,7 @@
         "labels": [] },
       { "name": "UserRole",
         "locations":
-          [ { "filename": "users.js",
-              "lineno": 211 } ],
+          [ { "filename": "users.js" } ],
         "docs":
           { "summary": "An object returned by the `getRoles()` function representing a user's <a href=\"https://support.wix.com/en/article/creating-member-roles-6943237\" target=\"_blank\">roles</a>.",
             "links":

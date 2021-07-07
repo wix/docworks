@@ -3,8 +3,7 @@
   "labels":
     [ "new" ],
   "location":
-    { "filename": "router.js",
-      "lineno": 9 },
+    { "filename": "router.js" },
   "docs":
     { "summary": "This module contains the APIs for code routers and data binding router hooks.",
       "description":
@@ -96,8 +95,7 @@
                   [ "wix-router.WixRouterResponse" ] },
             "doc": "Fulfilled - A router response, either the response received or a new response." },
         "locations":
-          [ { "filename": "router.js",
-              "lineno": 244 } ],
+          [ { "filename": "router.js" } ],
         "docs":
           { "summary": "Registers a hook that is called after a router.",
             "description":
@@ -210,8 +208,7 @@
                         [ "wix-router.WixRouterSitemapEntry" ] } ] },
             "doc": "Fulfilled - A sitemapEntries array." },
         "locations":
-          [ { "filename": "router.js",
-              "lineno": 302 } ],
+          [ { "filename": "router.js" } ],
         "docs":
           { "summary": "Registers a hook that is called after a sitemap is created.",
             "description":
@@ -276,8 +273,7 @@
                   [ "wix-router.WixRouterResponse" ] },
             "doc": "Fulfilled - Which page to display, redirect to, or which HTTP status code to respond with." },
         "locations":
-          [ { "filename": "router.js",
-              "lineno": 195 } ],
+          [ { "filename": "router.js" } ],
         "docs":
           { "summary": "Registers a hook that is called before a router.",
             "description":
@@ -375,8 +371,7 @@
           { "type": "wix-data.WixDataQuery",
             "doc": "A wix-data query." },
         "locations":
-          [ { "filename": "router.js",
-              "lineno": 342 } ],
+          [ { "filename": "router.js" } ],
         "docs":
           { "summary": "Registers a hook that is called after a route is resolved by the data binding router, but before the wix-data query is executed.",
             "description":
@@ -442,8 +437,7 @@
                   [ "wix-router.WixRouterResponse" ] },
             "doc": "Fulfilled - A response object with HTTP status code 403." },
         "locations":
-          [ { "filename": "router.js",
-              "lineno": 451 } ],
+          [ { "filename": "router.js" } ],
         "docs":
           { "summary": "Returns a response with a status code 403 (Forbidden) and instructs the router to show a 403 page.",
             "description":
@@ -481,8 +475,7 @@
                   [ "wix-router.WixRouterResponse" ] },
             "doc": "Fulfilled - The router response." },
         "locations":
-          [ { "filename": "router.js",
-              "lineno": 546 } ],
+          [ { "filename": "router.js" } ],
         "docs":
           { "summary": "Returns a response that instructs the router to continue.",
             "description":
@@ -521,8 +514,7 @@
                   [ "wix-router.WixRouterResponse" ] },
             "doc": "Fulfilled - A response object with HTTP status code 404." },
         "locations":
-          [ { "filename": "router.js",
-              "lineno": 423 } ],
+          [ { "filename": "router.js" } ],
         "docs":
           { "summary": "Returns a response with a status code 404 (Not Found) and instructs the router to show a 404 page.",
             "description":
@@ -575,8 +567,7 @@
                   [ "wix-router.WixRouterResponse" ] },
             "doc": "Fulfilled - The router response object." },
         "locations":
-          [ { "filename": "router.js",
-              "lineno": 382 } ],
+          [ { "filename": "router.js" } ],
         "docs":
           { "summary": "Returns a response with a status code 200 (OK) and instructs the router to show the selected page.",
             "description":
@@ -666,8 +657,7 @@
                   [ "wix-router.WixRouterResponse" ] },
             "doc": "Fulfilled - The redirect response object." },
         "locations":
-          [ { "filename": "router.js",
-              "lineno": 480 } ],
+          [ { "filename": "router.js" } ],
         "docs":
           { "summary": "Returns a response with a status code of 301 (Moved Permanently) or 302 (Found) and instructs the router to redirect to the given URL.",
             "description":
@@ -721,8 +711,7 @@
                   [ "wix-router.WixRouterResponse" ] },
             "doc": "Fulfilled - Which page to display, redirect to, or which HTTP status code to respond with." },
         "locations":
-          [ { "filename": "router.js",
-              "lineno": 80 } ],
+          [ { "filename": "router.js" } ],
         "docs":
           { "summary": "Function containing routing logic for a given URL prefix.",
             "description":
@@ -914,8 +903,7 @@
                   [ "wix-router.WixRouterResponse" ] },
             "doc": "Fulfilled - A response object with the specified HTTP status." },
         "locations":
-          [ { "filename": "router.js",
-              "lineno": 515 } ],
+          [ { "filename": "router.js" } ],
         "docs":
           { "summary": "Returns a response with the specified HTTP status code with an optional message.",
             "description":
@@ -967,8 +955,7 @@
                         [ "wix-router.WixRouterSitemapEntry" ] } ] },
             "doc": "Fulfilled - An array of sitemap entries." },
         "locations":
-          [ { "filename": "router.js",
-              "lineno": 148 } ],
+          [ { "filename": "router.js" } ],
         "docs":
           { "summary": "Function containing sitemap logic for a given URL prefix.",
             "description":

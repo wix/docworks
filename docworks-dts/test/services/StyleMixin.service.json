@@ -4,8 +4,7 @@
   "labels":
     [ "changed" ],
   "location":
-    { "filename": "StyleMixin.es6",
-      "lineno": 78 },
+    { "filename": "StyleMixin.es6" },
   "docs":
     { "summary": "Provides functionality for elements that can be styled.",
       "description":
@@ -37,8 +36,7 @@
         "set": false,
         "type": "$w.Style",
         "locations":
-          [ { "filename": "StyleMixin.es6",
-              "lineno": 104 } ],
+          [ { "filename": "StyleMixin.es6" } ],
         "docs":
           { "summary": "Gets an object containing information about the element's styles.",
             "links": [],

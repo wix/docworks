@@ -2,8 +2,7 @@
   "mixes": [],
   "labels": [],
   "location":
-    { "filename": "functions.es6",
-      "lineno": 9 },
+    { "filename": "functions.es6" },
   "docs":
     { "summary": "",
       "description": [],
@@ -18,8 +17,7 @@
       "ret":
       { "type": "void" },
       "locations":
-      [ { "filename": "ValidatableMixin.es6",
-        "lineno": 191 } ],
+      [ { "filename": "ValidatableMixin.es6" } ],
       "docs":
       { "summary": "Resets the element's visual validity indication.",
         "description": [],
@@ -36,8 +34,7 @@
       "ret":
       { "type": "void" },
       "locations":
-      [ { "filename": "location.es6",
-        "lineno": 272 } ],
+      [ { "filename": "location.es6" } ],
       "docs":
       { "summary": "Directs the browser to navigate to the specified URL.",
         "description": [],
@@ -62,8 +59,7 @@
         [ "Object" ] },
         "doc": "undefined. on fulfilled - The returned data from the lightbox.. on rejected - The error that caused the rejection." },
       "locations":
-      [ { "filename": "window.es6",
-        "lineno": 391 } ],
+      [ { "filename": "window.es6" } ],
       "docs":
       { "summary": "Opens a lightbox and optionally passes it the given data.",
         "description": [],
@@ -87,8 +83,7 @@
         [ "void" ] },
         "doc": "on fulfilled - When the scroll is complete." },
       "locations":
-      [ { "filename": "window.es6",
-        "lineno": 282 } ],
+      [ { "filename": "window.es6" } ],
       "docs":
       { "summary": "Scrolls the page by a given number of pixels.",
         "description": [],
@@ -111,8 +106,7 @@
         [ "void" ] },
         "doc": "on fulfilled - When the scroll is complete." },
       "locations":
-      [ { "filename": "window.es6",
-        "lineno": 282 } ],
+      [ { "filename": "window.es6" } ],
       "docs":
       { "summary": "...",
         "description": [],
@@ -132,7 +126,7 @@
             "$w.Slideshow" ],
           "doc": "..." },
       "locations":
-        [ { "filename": "PlayableMixin.es6","lineno": 72 } ],
+        [ { "filename": "PlayableMixin.es6" } ],
       "docs":
         { "summary": "Adds an event handler that runs when playback is paused.",
           "description": [], "links": [], "examples": [] } },
@@ -148,7 +142,7 @@
           "type": "wix-data.Hooks.HookContext",
           "doc": "Contextual information about the hook." } ],
       "ret": { "type": { "name": "Promise", "typeParams": [ "number" ] }, "doc": "..." },
-      "locations": [ { "filename": "hooks.es6", "lineno": 42 } ],
+      "locations": [ { "filename": "hooks.es6" } ],
       "docs":
       { "summary": "A hook that is triggered after a `count()` operation.",
         "description": [], "links": [], "examples": [] } }

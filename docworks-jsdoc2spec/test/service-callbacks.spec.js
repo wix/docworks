@@ -98,7 +98,7 @@ describe('docs', function() {
         errors: [
           {
             message: 'Callback AnErrorCallback has an unknown param type Unknown',
-            location: 'service-callbacks.js (60)'
+            location: 'service-callbacks.js'
           }
         ]
 
@@ -122,7 +122,7 @@ describe('docs', function() {
         errors: [
           {
             message: 'Operation operationWithUnknownCallback has an unknown param type UnknownCallback',
-            location: 'service-callbacks.js (80)'
+            location: 'service-callbacks.js'
           }
         ]
 

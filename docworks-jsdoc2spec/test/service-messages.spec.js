@@ -76,11 +76,11 @@ describe('docs', function() {
             messages: [
               {
                 name: 'OutMessage',
-                locations: [{filename: 'service-messages.js', lineno: 17}]
+                locations: [{filename: 'service-messages.js'}]
               },
               {
                 name: 'InMessage',
-                locations: [{filename: 'service-messages.js', lineno: 10}]
+                locations: [{filename: 'service-messages.js'}]
               }
             ]
           }

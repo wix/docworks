@@ -2,7 +2,7 @@ const {Void, Location, JsDocError, GeneticType, Docs, Example} = require('docwor
 const handlePlugins = require('./docworks-plugins')
 
 function handleMeta(meta) {
-  return Location(meta.filename, meta.lineno)
+  return Location(meta.filename)
 }
 
 const builtInTypes = {

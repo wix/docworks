@@ -12,8 +12,7 @@ describe('wix-queryable', () => {
 
   const makeDoclet = () => ({
       meta: {
-        filename: 'source-file.js',
-        lineno: '8'
+        filename: 'source-file.js'
       }
     }
   )

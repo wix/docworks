@@ -2,8 +2,7 @@
   "mixes": [],
   "labels": [],
   "location":
-    { "filename": "crm.js",
-      "lineno": 73 },
+    { "filename": "crm.js" },
   "docs":
     { "summary": "The wix-crm module contains functionality for working with\n [your site's contacts](https://support.wix.com/en/article/about-your-contact-list)\n from client-side code.",
       "description":
@@ -32,8 +31,7 @@
                   [ "string" ] },
             "doc": "Fulfilled - The ID of the new or updated contact.\nRejected - Error message." },
         "locations":
-          [ { "filename": "crm.js",
-              "lineno": 116 } ],
+          [ { "filename": "crm.js" } ],
         "docs":
           { "summary": "Creates a new contact or updates an existing contact.",
             "description":
@@ -153,8 +151,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the email is sent.\nRejected - Error message." },
         "locations":
-          [ { "filename": "crm.js",
-              "lineno": 174 } ],
+          [ { "filename": "crm.js" } ],
         "docs":
           { "summary": "Sends a Triggered Email to the contact.",
             "description":
@@ -262,8 +259,7 @@
   "messages":
     [ { "name": "ContactInfo",
         "locations":
-          [ { "filename": "crm.js",
-              "lineno": 86 } ],
+          [ { "filename": "crm.js" } ],
         "docs":
           { "summary": "An object that contains information about a site contact.",
             "links": [],

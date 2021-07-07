@@ -6,8 +6,7 @@
   "labels":
     [ "changed" ],
   "location":
-    { "filename": "productPage.js",
-      "lineno": 4 },
+    { "filename": "productPage.js" },
   "docs":
     { "summary": "A store page for a specific product.",
       "links": [],
@@ -28,8 +27,7 @@
                   [ "$w.ProductPage.StoreProduct" ] },
             "doc": "Fulfilled - When the information associated with the current product has been retrieved." },
         "locations":
-          [ { "filename": "productPage.js",
-              "lineno": 125 } ],
+          [ { "filename": "productPage.js" } ],
         "docs":
           { "summary": "Gets the all the information associated with the current product.",
             "description":
@@ -114,8 +112,7 @@
   "messages":
     [ { "name": "StoreProduct",
         "locations":
-          [ { "filename": "productPage.js",
-              "lineno": 74 } ],
+          [ { "filename": "productPage.js" } ],
         "docs":
           { "summary": "An object representing a product in a store.",
             "links":
@@ -281,8 +278,7 @@
         "labels": [] },
       { "name": "StoreProductAdditionalInfoSection",
         "locations":
-          [ { "filename": "productPage.js",
-              "lineno": 21 } ],
+          [ { "filename": "productPage.js" } ],
         "docs":
           { "summary": "An object representing an additional info section for a store product.",
             "links":
@@ -303,8 +299,7 @@
         "labels": [] },
       { "name": "StoreProductCustomTextFields",
         "locations":
-          [ { "filename": "productPage.js",
-              "lineno": 66 } ],
+          [ { "filename": "productPage.js" } ],
         "docs":
           { "summary": "An object representing a custom text field for a store product.",
             "links":
@@ -325,8 +320,7 @@
         "labels": [] },
       { "name": "StoreProductOption",
         "locations":
-          [ { "filename": "productPage.js",
-              "lineno": 57 } ],
+          [ { "filename": "productPage.js" } ],
         "docs":
           { "summary": "An object representing an option for a store product.",
             "links":
@@ -353,8 +347,7 @@
         "labels": [] },
       { "name": "StoreProductOptions",
         "locations":
-          [ { "filename": "productPage.js",
-              "lineno": 48 } ],
+          [ { "filename": "productPage.js" } ],
         "docs":
           { "summary": "An object representing all the available options for a store product.",
             "links":
@@ -372,8 +365,7 @@
         "labels": [] },
       { "name": "StoreProductOptionsChoice",
         "locations":
-          [ { "filename": "productPage.js",
-              "lineno": 29 } ],
+          [ { "filename": "productPage.js" } ],
         "docs":
           { "summary": "An object representing an options choice for a store product.",
             "links":
@@ -403,8 +395,7 @@
         "labels": [] },
       { "name": "StoreProductOptionsChoiceMedia",
         "locations":
-          [ { "filename": "productPage.js",
-              "lineno": 40 } ],
+          [ { "filename": "productPage.js" } ],
         "docs":
           { "summary": "An object representing the choice media",
             "links":
@@ -431,8 +422,7 @@
         "labels": [] },
       { "name": "StoreProductRibbon",
         "locations":
-          [ { "filename": "productPage.js",
-              "lineno": 14 } ],
+          [ { "filename": "productPage.js" } ],
         "docs":
           { "summary": "An object representing a ribbon for a store product.",
             "links":
